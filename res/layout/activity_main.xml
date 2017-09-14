@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.example.myview.DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:visibility="visible" >
+    </com.example.myview.DigitalClock>
+
+    <com.example.myview.TrigonView
+        android:id="@+id/progress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:background="#bbbbbb" />
+
+    <com.example.myview.CyclePageView
+        android:layout_width="80dp"
+        android:layout_height="80dp" >
+    </com.example.myview.CyclePageView>
+
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="60dp"
+        android:background="#00bbfd">
+         <com.example.myview.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp" >
+    </com.example.myview.RoundProgressBar>
+        
+    </LinearLayout>
+    
+   
+
+</LinearLayout>
